@@ -1,0 +1,62 @@
+BIP Template Editor
+Copyright 2026 BIP Template Editor contributors
+
+This product is licensed under the Apache License, Version 2.0 (see LICENSE).
+
+Independent project
+-------------------
+BIP Template Editor is an independent, community project. It is not
+affiliated with, endorsed by, sponsored by, or supported by Oracle
+Corporation, Microsoft Corporation, or Apple Inc.
+
+Trademarks
+----------
+Oracle, Java, Oracle BI Publisher, Oracle Analytics Publisher, and Oracle
+Fusion are trademarks or registered trademarks of Oracle and/or its
+affiliates. Microsoft and Word are trademarks of the Microsoft group of
+companies. Apple, Mac, macOS, and SF Symbols are trademarks of Apple Inc.
+Other names may be trademarks of their respective owners. These names are
+used only to describe compatibility and interoperability. As stated in
+section 6 of the Apache License, this license grants no permission to use
+any trade names or trademarks.
+
+Oracle components are not included
+----------------------------------
+This repository does not contain, and its releases must not contain, any
+Oracle software, libraries (for example xdo-core.jar, xdoparser11g.jar,
+xmlparserv2.jar, i18nAPI_v3.jar, orai18n*.jar), documentation, templates,
+or other Oracle materials.
+
+The optional local preview feature runs the Oracle BI Publisher rendering
+engine from an Oracle installation that each user provides. The
+`bun run oracle:import` script copies those libraries from the user's own
+Oracle Home into a folder on the user's machine. Each user is solely
+responsible for holding a valid Oracle license for that installation and
+for complying with Oracle's license terms. The Apache License of this
+project does not apply to, and grants no rights in, Oracle software.
+
+The BI Publisher RTF template syntax supported by this project
+(<?for-each?>, <?if?>, <?choose?>, form-field Help Text, and similar) is
+implemented from Oracle's public documentation and from observing the
+behavior of templates and outputs, without copying Oracle source code.
+
+Other third-party materials
+---------------------------
+Ribbon icons are rendered locally at build time from Apple SF Symbols on
+the developer's Mac and are not stored in this repository. Their use is
+subject to Apple's SF Symbols license terms.
+
+The Word plugin runs inside Microsoft Word for Mac, which users obtain and
+license separately from Microsoft.
+
+Templates and data
+------------------
+Report templates and XML data processed with this tool remain the property
+of their owners. Do not commit private or employer-owned templates or data
+to this repository; fixtures/private/ is ignored by Git for that purpose.
+The files in fixtures/synthetic/ are fictitious examples created for this
+project.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND. In
+particular, a successful local preview does not guarantee that a template
+behaves the same way in an Oracle BI Publisher server environment.
