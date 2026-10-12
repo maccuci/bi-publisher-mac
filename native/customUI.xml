@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<customUI xmlns="http://schemas.microsoft.com/office/2006/01/customui">
+  <ribbon><tabs>
+    <tab id="BIPNativeTab" label="BI Publisher" insertAfterMso="TabHome">
+      <group id="BIPDataGroup" label="XML Data">
+        <button id="BIPLoadXml" label="Import XML" size="large" image="iconImportXml" onAction="BIPImportXml" />
+        <button id="BIPBrowseXml" label="Insert Field" size="large" image="iconInsertField" onAction="BIPBrowseXml" />
+        <button id="BIPClearXml" label="Clear XML" image="iconClearXml" onAction="BIPClearXml" />
+      </group>
+      <group id="BIPStructureGroup" label="Structures">
+        <button id="BIPForEach" label="Repeat (for-each)" size="large" image="iconForEach" onAction="BIPInsertForEach" />
+        <button id="BIPGroup" label="Group (for-each-group)" size="large" image="iconGroup" onAction="BIPInsertGroup" />
+        <button id="BIPIf" label="Condition (if)" size="large" image="iconIf" onAction="BIPInsertIf" />
+        <button id="BIPChoose" label="Choose (choose)" size="large" image="iconChoose" onAction="BIPInsertChoose" />
+      </group>
+      <group id="BIPPreviewGroup" label="Preview">
+        <button id="BIPPreview" label="Preview PDF" size="large" image="iconPreview" onAction="BIPPreview" />
+      </group>
+      <group id="BIPFieldsGroup" label="Template Fields">
+        <button id="BIPInspectField" label="Inspect Field" size="large" image="iconInspectField" onAction="BIPInspectField" />
+      </group>
+      <group id="BIPInfoGroup" label="BIP Template Editor">
+        <button id="BIPAbout" label="About" image="iconAbout" onAction="BIPAbout" />
+      </group>
+    </tab>
+  </tabs></ribbon>
+</customUI>
