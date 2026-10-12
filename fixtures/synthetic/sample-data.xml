@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DATA>
+  <PERSON>
+    <PERSON_NAME>João da Silva</PERSON_NAME>
+    <SALARY>3500.00</SALARY>
+    <SALARY_AMOUNT>3750.00</SALARY_AMOUNT>
+    <STATUS>ACTIVE</STATUS>
+  </PERSON>
+</DATA>
