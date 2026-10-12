@@ -1,0 +1,19 @@
+{
+  "name": "bip-template-editor",
+  "version": "0.2.0",
+  "license": "Apache-2.0",
+  "private": true,
+  "scripts": {
+    "build": "bash scripts/build-native.sh out/native/BIPTemplateEditor.base.dotm",
+    "word:install": "bash scripts/install-native.sh",
+    "native:build": "bash scripts/build-native.sh",
+    "native:install": "bash scripts/install-native.sh",
+    "native:setup": "bash scripts/setup-native.sh",
+    "native:test": "python3 scripts/package-native.test.py",
+    "oracle:import": "bash scripts/import-oracle-engine.sh",
+    "preview": "L=\"${BIP_ORACLE_LIB:-$HOME/Library/Application Support/BIPTemplateEditor/oracle-lib}\"; J=/opt/homebrew/opt/openjdk@21/bin/java; [ -x \"$J\" ] || J=/usr/local/opt/openjdk@21/bin/java; \"$J\" -cp \"$L/*\" native/BIPPreview.java",
+    "test": "python3 scripts/package-native.test.py",
+    "release": "bash scripts/release.sh",
+    "native:uninstall": "bash scripts/uninstall-native.sh"
+  }
+}
