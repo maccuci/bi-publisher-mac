@@ -37,3 +37,6 @@ __pycache__/
 # corporate templates and local Word development certificates
 fixtures/private/
 .certs/
+
+# internal product spec, kept local only
+docs/PRD_BI_Publisher_Word_macOS.md
