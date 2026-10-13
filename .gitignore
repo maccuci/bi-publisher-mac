@@ -38,5 +38,5 @@ __pycache__/
 fixtures/private/
 .certs/
 
-# internal product spec, kept local only
-docs/PRD_BI_Publisher_Word_macOS.md
+# internal docs, kept local only
+docs/
