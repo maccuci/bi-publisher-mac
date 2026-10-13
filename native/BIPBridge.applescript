@@ -56,7 +56,7 @@ on preview(payload)
         return my reply(target, "ERR|Java 21 not found. Install it with: brew install openjdk@21")
     end try
     try
-        do shell script "test -f " & quoted form of (oracleLib & "/xdo-core.jar")
+        do shell script "test -f " & quoted form of (oracleLib & "/xdo-core.jar") & " || test -f " & quoted form of (oracleLib & "/xdocore.jar")
     on error
         return my reply(target, "ERR|Oracle engine not found in " & oracleLib & ". Run \"Import Oracle Engine.command\" once and choose your Oracle_Home folder.")
     end try

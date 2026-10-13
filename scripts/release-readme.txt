@@ -26,7 +26,8 @@ installation. No Oracle components are included in this package.
    (Apple silicon and Intel Homebrew locations are both supported, as is
    any JDK 21 registered with macOS.)
 2. Run "Import Oracle Engine.command" (as in step 2 above) and choose the
-   Oracle_Home folder (the one containing bip/lib and jlib). The required
+   Oracle_Home folder (the one containing bip/lib and jlib), or a BI
+   Publisher Desktop folder copied from Windows. The required
    files are copied once to
    ~/Library/Application Support/BIPTemplateEditor/oracle-lib/
 

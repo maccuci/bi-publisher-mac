@@ -48,7 +48,7 @@ For **Preview PDF**, install Java 21 (`brew install openjdk@21`) and run `Import
 
 ## Build and install
 
-Development requires macOS, Microsoft Word for Mac, Bun, Python 3, and a Swift compiler. Local Oracle preview additionally requires Java 21 (`brew install openjdk@21`) and a licensed Oracle installation; Oracle libraries are not included in this repository. Copy the engine once from your Oracle Home; afterwards the preview no longer depends on that installation:
+Development requires macOS, Microsoft Word for Mac, Bun, Python 3, and a Swift compiler. Local Oracle preview additionally requires Java 21 (`brew install openjdk@21`) and the BI Publisher engine jars from a licensed Oracle installation. Oracle does not need to run on the Mac: the jars are platform-independent Java, so copy them once from an existing Oracle Home (a company BI server, a Windows VM) or from a BI Publisher Desktop (Template Builder for Word) folder. Afterwards the preview no longer depends on that installation. Oracle libraries are not included in this repository:
 
 ```sh
 bun run oracle:import "/path/to/Oracle_Home"

@@ -37,7 +37,7 @@ The engine libraries are copied once from a licensed Oracle Home into a local fo
 bun run oracle:import "/path/to/Oracle_Home"
 ```
 
-The script copies the jars from `bip/lib` plus `jlib/orai18n.jar`, `orai18n-collation.jar`, and `orai18n-mapping.jar` to `~/Library/Application Support/BIPTemplateEditor/oracle-lib/` and records the source in `SOURCE.txt`. Run it again to update the engine. Oracle components are not redistributed by this project and are never committed to the repository.
+The script copies the jars from `bip/lib` plus `jlib/orai18n.jar`, `orai18n-collation.jar`, and `orai18n-mapping.jar` to `~/Library/Application Support/BIPTemplateEditor/oracle-lib/` and records the source in `SOURCE.txt`. It also accepts a BI Publisher Desktop (Template Builder for Word) folder copied from Windows: it finds `xdocore.jar` and copies every jar from that folder. Run it again to update the engine. Oracle components are not redistributed by this project and are never committed to the repository.
 
 | Dependency | Path |
 | --- | --- |
